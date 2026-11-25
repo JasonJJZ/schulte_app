@@ -23,7 +23,7 @@ jobs:
       - run: flutter pub get
       - run: flutter build web --release --base-href "/schulte_app/"
       - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: build/web
       - id: deployment
